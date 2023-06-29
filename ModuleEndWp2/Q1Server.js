@@ -1,9 +1,9 @@
 var exp=require('express')
 var bp=require('body-parser')
-var cors=require('cors');
+
 
 var app=exp()
-app.use(cors());
+
 
 app.use(bp.urlencoded({extended:true}))
 app.listen(9000,function(){
